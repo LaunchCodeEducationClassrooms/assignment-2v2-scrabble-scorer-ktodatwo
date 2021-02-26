@@ -74,11 +74,11 @@ let scrabbleScore = function(word) {
 };
 
 const scoringAlgorithms = [
-simpleScorer = ({name: 'Simple Score', description: 'Each letter is worth 1 point', scorerFunction: simpleScore}),
+({name: 'Simple Score', description: 'Each letter is worth 1 point', scorerFunction: simpleScore}),
 
-bounusScorer = ({name: 'Bonus Vowels', description: 'Vowels are 3pts, consonants are 1pt',scorerFunction:vowelBonusScore}),
+({name: 'Bonus Vowels', description: 'Vowels are 3pts, consonants are 1pt',scorerFunction:vowelBonusScore}),
 
-scrabbleScorer = ({name: 'Scrabble', description: 'Traditional Scoring System', scorerFunction: scrabbleScore})];
+({name: 'Scrabble', description: 'Traditional Scoring System', scorerFunction: scrabbleScore})];
 
 
 function scorerPrompt() {

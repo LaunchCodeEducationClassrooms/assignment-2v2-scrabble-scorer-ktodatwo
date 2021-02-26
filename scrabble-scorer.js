@@ -77,21 +77,21 @@ const scoringAlgorithms = [
   simple = {
     name: 'Simple Score', 
     description: 'Each letter is worth 1 point', 
-    scorerFunction: function(word) {
+    scorerFunction: function() {
       return simpleScore(word);
       }
     },
   bonusValues = {
     name: 'Bonus Vowels',
     description: 'Vowels are 3pts, consonants are 1pt',
-    scorerFunction: function(word) {
+    scorerFunction: function() {
       return vowelBonusScore(word);
       }
     },
   scrabble = {
     name: 'Scrabble',
     description: 'Traditional Scoring System',
-    scorerFunction: function(word) {
+    scorerFunction: function() {
       return scrabbleScore(word);
       }
     }

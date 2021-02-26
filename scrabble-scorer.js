@@ -116,7 +116,6 @@ for (let item in oldPointStructure) {
   for (let i in oldPointStructure[item])
   fasterScore[oldPointStructure[item][i].toLowerCase()] = Number(item);
 }
-console.log(`${fasterScore}-from transform`)
 return fasterScore;
 };
 

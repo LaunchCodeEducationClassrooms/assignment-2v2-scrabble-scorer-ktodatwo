@@ -74,27 +74,27 @@ let scrabbleScore = function(word) {
 };
 
 const scoringAlgorithms = [
-  {
+  ({
     name: 'Simple Score', 
     description: 'Each letter is worth 1 point', 
     scorerFunction: function() {
       return simpleScore(word);
       }
-    },
-  {
+    }),
+  ({
     name: 'Bonus Vowels',
     description: 'Vowels are 3pts, consonants are 1pt',
     scorerFunction: function() {
       return vowelBonusScore(word);
       }
-    },
-  {
+    }),
+  ({
     name: 'Scrabble',
     description: 'Traditional Scoring System',
     scorerFunction: function() {
       return scrabbleScore(word);
       }
-    }
+    })
     ];
 
 function scorerPrompt() {
